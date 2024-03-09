@@ -10,7 +10,8 @@ pip install numpy pandas matplotlib seaborn babel streamlit
 ```
 
 ### How to Run Streamlit
-```streamlit run dashboard.py
+```
+streamlit run dashboard.py
 ```
 :link: [Dashboard Syntax](https://github.com/syifaulainizahroh/penyewaan-sepeda/blob/main/dashbboard.py)
 
