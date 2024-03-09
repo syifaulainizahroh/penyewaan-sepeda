@@ -88,14 +88,14 @@ with col1:
     st.metric("Total Sharing Bike", value=total_orders)
 
 with col2:
-    total_sum = reg_df.register_sum.sum()
-    st.metric("Total Registered", value=total_sum)
-
-with col3:
     total_sum = cas_df.casual_sum.sum()
     st.metric("Total Casual", value=total_sum)
 
-st.subheader("1. Apakah efek musim mempengaruhi jumlah total penyewaan sepeda ? ")
+with col3:
+    total_sum = reg_df.register_sum.sum()
+    st.metric("Total Registered", value=total_sum)
+
+st.subheader("1. Bagaimana jumlah penjualan dalam beberapa tahun terakhir ? ")
 
 fig, ax = plt.subplots(figsize=(16, 8))
 ax.plot(
